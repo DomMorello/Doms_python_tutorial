@@ -1,9 +1,10 @@
-marks = [90,38,58,79,98]
 
-number = 0
-for mark in marks:
-    number += 1
-    if mark >= 60:
-        print("%d pass" % number)
+def introduce(name, age, man=True):
+    print("name is %s" % name)
+    print("age is %d" % age)
+    if man:
+        print("male")
     else:
-        print("%d fail" % number)
+        print("female")
+
+introduce("donglee", 28, False)
